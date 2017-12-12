@@ -1,0 +1,8 @@
+.container {
+	background-color: blue;
+}
+
+.col-md-4 {
+	border: 1px solid black;
+	height: 200px;
+}
