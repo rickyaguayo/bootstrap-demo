@@ -1,0 +1,87 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+p.shrek {
+	font-size: 1.25rem;
+	color: green;
+	text-align: center;
+}
+
+img.shrek {
+	height: 70vh;
+	width: 
+}
+
+p.bandaid, p.carlos {
+	font-size: 1.25rem;
+	color: red;
+	text-align: center;
+}
+
+i.fas.fa-band-aid.fa-10x {
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+	left: 41.5%
+} 
+
+i.fab.fa-bluetooth-b.fa-10x {
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+	left: 45%
+}
+
+i.fab.fa-bluetooth-b.fa-10x:hover {
+	transform: rotate(90deg);	
+}
+
+p.spy, p.ie {
+	font-size: 1.25rem;
+	color: blue;
+	text-align: center;
+}
+
+
+
+
+
+@media screen and (max-width: 700px) {
+	h1 {
+		font-size: 24px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	span {
+		display: none;
+	}
+	p.shrek, 
+	p.bandaid, 
+	p.spy, 
+	p.carlos, 
+	p.ie {
+		font-size: 1rem;
+	}
+
+	img.shrek {
+		height: 300px;
+		width: auto;
+	}
+	i.fab.fa-bluetooth-b.fa-10x {
+		font-size: 20vh;
+		left: 47%;
+	}
+}

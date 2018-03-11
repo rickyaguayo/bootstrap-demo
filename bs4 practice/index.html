@@ -8,6 +8,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
     <title>Hello, world!</title>
   </head>
   <body>
@@ -20,24 +24,25 @@
       </li>
       
       <li class="nav-item">
-        <a class="nav-link" href="#bandaid" data-toggle="tab" role="tab"><i class="fas fa-band-aid fa-lg"></i><span> Not Bandaid</span></a>
+        <a class="nav-link" href="#bandaid" data-toggle="tab" role="tab"><i class="fas fa-band-aid fa-lg"></i><span> Bandaid</span></a>
       </li>
       
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-fire fa-lg"></i><span> Tab 3</span></a>
+        <a class="nav-link" href="#spy" role="tab" data-toggle="tab"><i class="fab fa-bluetooth-b fa-lg"></i><span> Spy</span></a>
       </li>
       
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-chart-pie fa-lg"></i><span> Tab 4</span></a>
+        <a class="nav-link" href="#carlos" role="tab" data-toggle="tab"><i class="fas fa-chart-pie fa-lg"></i><span> Carlos</span></a>
       </li>
       
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fab fa-internet-explorer fa-lg"></i><span> The Exception</span></a>
+        <a class="nav-link" href="#ie" role="tab" data-toggle="tab"><i class="fab fa-internet-explorer fa-lg"></i><span> The Exception</span></a>
       </li>
     </ul>
 
     <div class="tab-content">
       <div class="tab-pane active" id="shrek" role="tabpanel">
+        <h2>PICK NUMBER THREE!</h2>
         <div class="row">
          <p class="col-sm-6 shrek">Do you remember in the first Shrek movie when Lord Farquaad had the magical mirror from Snow White? He's looking for a princess to be his queen and the mirror is there to help him in his quest d'amore. After the mirror goes through his three royal options, Lord Farquaad turns to his team for guidance. And one very bright executioner looking fellow named Thelonious holds up two fingers and exclaims, "Pick number 3 my lord!". So while you may see two fingers, or even a sign of peace, I think of Shrek.</p>
           <img src="http://cdn-webimages.wimages.net/050f6554e630b338707d4869e015b0e294fa0-retina-thumbnail-large.jpg?v=3" alt="shrek pic" class="col-sm-6 shrek img-fluid">
@@ -45,11 +50,26 @@
       </div>
       
       <div class="tab-pane" id="bandaid" role="tabpanel">
-        <div class="row">
-          <p>bandaid</p>
-        </div>
+        <h2>NOT A BANDAID</h2>
+        <p class="col-sm-6 offset-sm-3 bandaid">This one is pretty easy. When I saw this one, I knew that it was a bandaid. But if you take an even closer look and use a little bit of your imagination, it kind of looks like the top view of a car. With airholes. Or four small round sunroofs. What would you do with 4 sunroofs? I'm thinking brass quartet on the run.</p><i class="fas fa-band-aid fa-10x"></i>
       </div>
-  
+
+      <div class="tab-pane" id="spy" role="tabpanel">
+        <h2>THE BLUE SPY</h2>
+        <p class="col-sm-6 offset-sm-3 spy">I know, I know. You see a bluetooth symbol. I see it everyday. I use it everyday. I have an Apple Watch, I use the bluetooth feature in my car as well. But have you ever seen this symbol rotated? Hover over the image. What do you see now? Do you see the angry spy?</p>
+        <i class="fab fa-bluetooth-b fa-10x"></i>
+      </div>
+
+      <div class="tab-pane" id="carlos" role="tabpanel">
+        <h2>THAT CARLOS GUY</h2>
+        <p class="col-sm-6 offset-sm-3 carlos">A traditional pie graph, no? No indeed. Here's the situation. Your office has a pizza party. But you have to keep going on your work. You don't have time to get up and get pizza right now. But that delicious molten cheese will be yours soon. Once the work is finally done, there are only three slices. Then that guy Carlos joins you in the journey to finish the pizza. But he's already visited once. In fact, he's already had two pieces. And the he has the audacity to grab 2 of the 3 remaining pieces. And you're left with 1 and the dying desire for a full stomach of pizza. So it may be a pie chart at first glance, but there is a sad story behind it too.</p>
+      </div>
+
+      <div class="tab-pane" id="ie" role="tabpanel">
+        <h2>THE EXCEPTION</h2>
+        <p class="col-sm-6 offset-sm-3 ie">I call this one the exception because it is not misunderstood. Everyone know that Internet Explorer is the worst. That's all. Seriously.</p>
+      </div>
+
 <!--   end tab-content -->
 </div>
 
