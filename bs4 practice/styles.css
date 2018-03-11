@@ -15,31 +15,38 @@ p.shrek {
 	font-size: 1.25rem;
 	color: green;
 	text-align: center;
+	animation: moveInBottom 1s ease-out;
+	backface-visibility: hidden;
 }
 
 img.shrek {
 	height: 70vh;
-	width: 
+	animation: moveInBottom 1s ease-out .75s;
+	animation-fill-mode: backwards;
 }
 
 p.bandaid, p.carlos {
 	font-size: 1.25rem;
 	color: red;
 	text-align: center;
+	animation: moveInBottom 1s ease-out;
 }
 
 i.fas.fa-band-aid.fa-10x {
 	text-align: center;
 	display: inline-block;
 	position: absolute;
-	left: 41.5%
+	left: 41.5%;
+	animation: moveInRight 1s ease-out;
 } 
 
 i.fab.fa-bluetooth-b.fa-10x {
 	text-align: center;
 	display: inline-block;
 	position: absolute;
-	left: 45%
+	left: 45%;
+	animation: moveInBottom 1s ease-out .75s;
+	animation-fill-mode: backwards;
 }
 
 i.fab.fa-bluetooth-b.fa-10x:hover {
@@ -50,10 +57,37 @@ p.spy, p.ie {
 	font-size: 1.25rem;
 	color: blue;
 	text-align: center;
+	animation: moveInBottom 1s ease-out;
 }
 
 
+@keyframes moveInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(10rem);
+	}
 
+	80% {
+		transform: translateX(-1rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(3rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
 
 
 @media screen and (max-width: 700px) {
